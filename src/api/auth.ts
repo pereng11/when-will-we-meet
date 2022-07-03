@@ -1,4 +1,5 @@
 import {
+  Auth,
   getAuth,
   signInAnonymously as firebaseAnonymousSignIn,
 } from 'firebase/auth';
