@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
-import { getAuth } from 'firebase/auth';
-import type { User } from '../types/user';
-import { signInAnonymously } from '../api/signin';
+import { getAuth, signInAnonymously } from 'firebase/auth';
+import type { User, UserInfo } from '../types/user';
 import {
   getUserData,
-  addUserThunk,
-  getUserThunk,
+  signInUserThunk,
+  signoutUserThunk,
 } from '../store/modules/userSlice';
 import { useAppSelector, useAppDispatch } from '../store';
 
@@ -27,23 +26,28 @@ export default function TestUserInput() {
   };
 
   const logUserInfo = async () => {
-    console.log(user);
+    const auth = getAuth();
+    console.log(auth.currentUser?.uid);
   };
 
   const anonymousSignIn = async () => {
     try {
-      const anonymousUser = await signInAnonymously();
+      const anonymousUser = await signInAnonymously(getAuth());
       if (!anonymousUser) return;
 
-      const newUser: User = {
+      const newUser: UserInfo = {
         id: anonymousUser.user.uid,
         name: 'testName',
         profile: 'testProfile',
         meetings: [],
       };
 
-      await dispatch(addUserThunk(newUser));
+      await dispatch(signInUserThunk(newUser));
     } catch (err) {}
+  };
+
+  const signOut = () => {
+    dispatch(signoutUserThunk());
   };
 
   return (
@@ -65,6 +69,9 @@ export default function TestUserInput() {
       </button>
       <button type="button" onClick={anonymousSignIn}>
         익명유저 가입하기
+      </button>
+      <button type="button" onClick={signOut}>
+        로그아웃
       </button>
     </div>
   );

@@ -7,6 +7,5 @@ export type UserInfo = {
 
 export type User = {
   info: UserInfo;
-  logged: boolean;
   validated: boolean;
 };
