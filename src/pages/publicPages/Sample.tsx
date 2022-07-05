@@ -1,7 +1,7 @@
 import React from 'react';
-import { useAppSelector } from '../store';
-import { getUserData } from '../store/modules/userSlice';
-import TestUserInput from '../components/TestUserInput';
+import { useAppSelector } from '../../store';
+import { getUserData } from '../../store/modules/userSlice';
+import TestUserInput from '../../components/TestUserInput';
 
 export function PrivatePage() {
   const user = useAppSelector((state) => getUserData(state));

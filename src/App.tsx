@@ -2,14 +2,13 @@ import { useEffect, useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
 import { getUserThunk, signoutUserThunk } from './store/modules/userSlice';
-import TestUserInput from './components/TestUserInput';
 import { PrivateRoute, PublicRoute } from './routes';
-import {
-  PrivatePage,
-  PublicCommonPage,
-  PublicRestrictedPage,
-} from './pages/Sample';
 import { useAppDispatch } from './store';
+
+import Login from './pages/publicPages/Login';
+import Register from './pages/publicPages/Register';
+import MainPage from './pages/privatePages/MainPage';
+import { PublicCommonPage } from './pages/publicPages/Sample';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -43,10 +42,11 @@ function App() {
           <Route path="/anyone" element={<PublicCommonPage />} />
         </Route>
         <Route element={<PublicRoute restricted />}>
-          <Route path="/login" element={<PublicRestrictedPage />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
         </Route>
         <Route element={<PrivateRoute />}>
-          <Route path="/home" element={<PrivatePage />} />
+          <Route path="/home" element={<MainPage />} />
         </Route>
       </Routes>
     </div>
