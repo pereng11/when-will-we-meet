@@ -31,13 +31,7 @@ export const getUserThunk = createAsyncThunk(
   }
 );
 
-export const logoutUserThunk = createAsyncThunk('user/logout', async () => {
-  await signOut(getAuth());
-  storage.remove(STORAGE_KEY);
-  return null;
-});
-
-const thunkAPIs = [createOrUpdateUserThunk, getUserThunk, logoutUserThunk];
+const thunkAPIs = [createOrUpdateUserThunk, getUserThunk];
 
 export const userSlice = createSlice({
   name: 'user',
@@ -78,7 +72,7 @@ export const userSlice = createSlice({
     });
   },
 });
-export const { logInUser } = userSlice.actions;
+export const { logInUser, logOutUser } = userSlice.actions;
 
 export const getUserData = (state: RootState) => state.user.data;
 export const getUserStatus = (state: RootState) => state.user.status;

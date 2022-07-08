@@ -2,6 +2,9 @@
 lib/**/*.js
 lib/**/*.js.map
 
+# firebase key
+service-account.json
+
 # TypeScript v1 declaration files
 .env
 .env.dev

@@ -75,7 +75,7 @@ export default function Login() {
         const newUser: UserInfo = {
           id: userCredential.user.uid,
           name: '',
-          profile: '',
+          profile_image: '',
           method,
           meetings: [],
         };
