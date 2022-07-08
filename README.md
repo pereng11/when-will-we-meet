@@ -9,8 +9,8 @@
 개발모드로 앱 실행
 주소: http://localhost:3000
 
-### `yarn run emulator`
+### `yarn run emulat`
 
-파이어베이스 로컬 에뮬레이터 구동
-현재 Auth, Firestore, Cloud Functions 연동되어있음
-src/firebase/index에서 관리 가능
+- 파이어베이스 로컬 에뮬레이터 구동
+- 현재 Auth, Firestore, Cloud Functions 연동되어있음
+- src/firebase/index에서 관리 가능
