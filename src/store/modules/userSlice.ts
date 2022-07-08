@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk, PayloadAction } from '@reduxjs/toolkit';
 import { Auth, getAuth, signOut } from 'firebase/auth';
-import { addUser, getUser } from '../../api/users';
+import { createOrUpdateUser, getUser } from '../../api/users';
 import { AsyncState, asyncState } from '../../lib/asyncState';
 import type { RootState } from '../index';
 import type { User, UserInfo } from '../../types/user';
@@ -14,10 +14,10 @@ const initialState: UserState = asyncState.initial({
   validated: false,
 });
 
-export const signInUserThunk = createAsyncThunk(
+export const createOrUpdateUserThunk = createAsyncThunk(
   'user/add',
   async (user: UserInfo) => {
-    const newUser = await addUser(user);
+    const newUser = await createOrUpdateUser(user);
     storage.set(STORAGE_KEY, user);
     return newUser;
   }
@@ -31,24 +31,30 @@ export const getUserThunk = createAsyncThunk(
   }
 );
 
-export const signoutUserThunk = createAsyncThunk('user/logout', async () => {
+export const logoutUserThunk = createAsyncThunk('user/logout', async () => {
   await signOut(getAuth());
   storage.remove(STORAGE_KEY);
   return null;
 });
 
-const thunkAPIs = [signInUserThunk, getUserThunk, signoutUserThunk];
+const thunkAPIs = [createOrUpdateUserThunk, getUserThunk, logoutUserThunk];
 
 export const userSlice = createSlice({
   name: 'user',
   initialState,
   reducers: {
-    // setUser: (state: UserState, action: PayloadAction<UserInfo>) => {
-    //   return asyncState.success({
-    //     info: action.payload,
-    //     validated: state.data?.validated || false,
-    //   });
-    // },
+    logInUser: (state: UserState, action: PayloadAction<UserInfo>) => {
+      return asyncState.success({
+        info: action.payload,
+        validated: true,
+      });
+    },
+    logOutUser: () => {
+      return asyncState.success({
+        info: null,
+        validated: false,
+      });
+    },
   },
   extraReducers: (builder) => {
     thunkAPIs.forEach((thunk) => {
@@ -72,7 +78,7 @@ export const userSlice = createSlice({
     });
   },
 });
-// export const { setUser } = userSlice.actions;
+export const { logInUser } = userSlice.actions;
 
 export const getUserData = (state: RootState) => state.user.data;
 export const getUserStatus = (state: RootState) => state.user.status;

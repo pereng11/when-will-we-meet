@@ -1,22 +1,18 @@
 import * as functions from 'firebase-functions';
-import * as admin from 'firebase-admin';
+import express from 'express';
+import cors from 'cors';
+import kakaoRoutes from './routes/kakao';
+import dotenv from 'dotenv';
 
-admin.initializeApp();
+dotenv.config();
 
-// const kakaoRequestProfileURL =
-//   'https://kapi.kakao.com/v2/user/me?secure_resource=true';
+const app = express();
 
-// function requestMe(kakaoAccessToken) {
-//   //requesting user profile from kakao API server
-//   fetch( kakaoRequestProfileURL, {
+const corsOptions = {
+  origin: true,
+};
 
-//   })
-// }
+app.use(cors(corsOptions));
+app.use('/kakao', kakaoRoutes);
 
-// // Start writing Firebase Functions
-// // https://firebase.google.com/docs/functions/typescript
-//
-export const helloWorld = functions.https.onRequest((request, response) => {
-  functions.logger.info('Hello logs!', { structuredData: true });
-  response.send('Hello from Firebase!');
-});
+export const api = functions.https.onRequest(app);

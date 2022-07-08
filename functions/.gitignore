@@ -4,6 +4,7 @@ lib/**/*.js.map
 
 # TypeScript v1 declaration files
 .env
+.env.dev
 typings/
 
 # Node.js dependency directory

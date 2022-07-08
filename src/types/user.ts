@@ -2,6 +2,7 @@ export type UserInfo = {
   id: string;
   name: string;
   profile: string;
+  method: string;
   meetings: string[];
 } | null;
 
