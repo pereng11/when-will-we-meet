@@ -1,23 +1,14 @@
-import {
-  collection,
-  doc,
-  getDoc,
-  getDocs,
-  setDoc,
-  query,
-  where,
-  DocumentData,
-} from 'firebase/firestore';
-import { db } from '../firebase';
-import type { User, UserInfo } from '../types/user';
+import { doc, getDoc, setDoc } from 'firebase/firestore';
+import { db } from '../firebase/firestore';
+import type { UserInfo } from '../types/user';
 
-const USERS_COLLECTION = 'users';
+const USERS_COLLECTION = db.users;
 
 const createOrUpdateUser = async (userInfo: UserInfo): Promise<UserInfo> => {
   if (!userInfo) return null;
 
   try {
-    await setDoc(doc(db, USERS_COLLECTION, userInfo.id), userInfo);
+    await setDoc(doc(USERS_COLLECTION, userInfo.id), userInfo);
     return userInfo;
   } catch (err: any) {
     console.error('Error adding document: ', err);
@@ -27,12 +18,12 @@ const createOrUpdateUser = async (userInfo: UserInfo): Promise<UserInfo> => {
 
 const getUser = async (id: string): Promise<UserInfo> => {
   try {
-    const userRef = doc(db, USERS_COLLECTION, id);
+    const userRef = doc(USERS_COLLECTION, id);
     const userSnapshot = await getDoc(userRef);
     if (!userSnapshot.exists()) {
       return null;
     }
-    const userInfo = userSnapshot.data() as UserInfo;
+    const userInfo = userSnapshot.data();
     return userInfo;
   } catch (err: any) {
     console.error('Error adding document: ', err);

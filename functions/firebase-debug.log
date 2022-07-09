@@ -1,44 +1,45 @@
-[debug] [2022-07-08T09:35:20.689Z] ----------------------------------------------------------------------
-[debug] [2022-07-08T09:35:20.690Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\OSSVAL\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
-[debug] [2022-07-08T09:35:20.691Z] CLI Version:   11.1.0
-[debug] [2022-07-08T09:35:20.691Z] Platform:      win32
-[debug] [2022-07-08T09:35:20.691Z] Node Version:  v16.13.1
-[debug] [2022-07-08T09:35:20.693Z] Time:          Fri Jul 08 2022 18:35:20 GMT+0900 (대한민국 표준시)
-[debug] [2022-07-08T09:35:20.693Z] ----------------------------------------------------------------------
+[debug] [2022-07-08T18:00:00.621Z] ----------------------------------------------------------------------
+[debug] [2022-07-08T18:00:00.624Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\OSSVAL\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2022-07-08T18:00:00.624Z] CLI Version:   11.1.0
+[debug] [2022-07-08T18:00:00.624Z] Platform:      win32
+[debug] [2022-07-08T18:00:00.624Z] Node Version:  v16.13.1
+[debug] [2022-07-08T18:00:00.626Z] Time:          Sat Jul 09 2022 03:00:00 GMT+0900 (대한민국 표준시)
+[debug] [2022-07-08T18:00:00.626Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2022-07-08T09:35:20.754Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2022-07-08T09:35:20.755Z] > authorizing via signed-in user (perengdev0302@gmail.com)
-[debug] [2022-07-08T09:35:20.974Z] java version "15.0.2" 2021-01-19
+[debug] [2022-07-08T18:00:00.689Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-08T18:00:00.689Z] > authorizing via signed-in user (perengdev0302@gmail.com)
+[debug] [2022-07-08T18:00:00.888Z] java version "15.0.2" 2021-01-19
 
-[debug] [2022-07-08T09:35:20.975Z] Java(TM) SE Runtime Environment (build 15.0.2+7-27)
+[debug] [2022-07-08T18:00:00.889Z] Java(TM) SE Runtime Environment (build 15.0.2+7-27)
 Java HotSpot(TM) 64-Bit Server VM (build 15.0.2+7-27, mixed mode, sharing)
 
-[debug] [2022-07-08T09:35:20.991Z] Parsed Java major version: 15
-[info] i  emulators: Starting emulators: auth, functions, firestore {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: auth, functions, firestore"}}
-[warn] !  emulators: It seems that you are running multiple instances of the emulator suite for project when-we-meet-28579. This may result in unexpected behavior. 
-[debug] [2022-07-08T09:35:21.024Z] [hub] writing locator at C:\Users\OSSVAL\AppData\Local\Temp\hub-when-we-meet-28579.json
-[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mdatabase, hosting, pubsub, storage\u001b[22m"}}
+[debug] [2022-07-08T18:00:00.903Z] Parsed Java major version: 15
+[info] i  emulators: Starting emulators: auth, functions, firestore, storage {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: auth, functions, firestore, storage"}}
+[debug] [2022-07-08T18:00:00.932Z] [hub] writing locator at C:\Users\OSSVAL\AppData\Local\Temp\hub-when-we-meet-28579.json
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: database, hosting, pubsub {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mdatabase, hosting, pubsub\u001b[22m"}}
 [info] +  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
-[debug] [2022-07-08T09:35:21.064Z] defaultcredentials: writing to file C:\Users\OSSVAL\AppData\Roaming\firebase\perengdev0302_gmail_com_application_default_credentials.json
-[debug] [2022-07-08T09:35:21.066Z] Setting GAC to C:\Users\OSSVAL\AppData\Roaming\firebase\perengdev0302_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\OSSVAL\\AppData\\Roaming\\firebase\\perengdev0302_gmail_com_application_default_credentials.json"}}
-[debug] [2022-07-08T09:35:21.070Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/when-we-meet-28579/adminSdkConfig [none]
-[debug] [2022-07-08T09:35:21.631Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/when-we-meet-28579/adminSdkConfig 200
-[debug] [2022-07-08T09:35:21.631Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/when-we-meet-28579/adminSdkConfig {"projectId":"when-we-meet-28579","storageBucket":"when-we-meet-28579.appspot.com","locationId":"asia-northeast3"}
+[debug] [2022-07-08T18:00:00.972Z] defaultcredentials: writing to file C:\Users\OSSVAL\AppData\Roaming\firebase\perengdev0302_gmail_com_application_default_credentials.json
+[debug] [2022-07-08T18:00:00.974Z] Setting GAC to C:\Users\OSSVAL\AppData\Roaming\firebase\perengdev0302_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\OSSVAL\\AppData\\Roaming\\firebase\\perengdev0302_gmail_com_application_default_credentials.json"}}
+[debug] [2022-07-08T18:00:00.977Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/when-we-meet-28579/adminSdkConfig [none]
+[debug] [2022-07-08T18:00:01.363Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/when-we-meet-28579/adminSdkConfig 200
+[debug] [2022-07-08T18:00:01.363Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/when-we-meet-28579/adminSdkConfig {"projectId":"when-we-meet-28579","storageBucket":"when-we-meet-28579.appspot.com","locationId":"asia-northeast3"}
 [warn] !  firestore: Did not find a Cloud Firestore rules file specified in a firebase.json config file. {"metadata":{"emulator":{"name":"firestore"},"message":"Did not find a Cloud Firestore rules file specified in a firebase.json config file."}}
 [warn] !  firestore: The emulator will default to allowing all reads and writes. Learn more about this option: https://firebase.google.com/docs/emulator-suite/install_and_configure#security_rules_configuration. {"metadata":{"emulator":{"name":"firestore"},"message":"The emulator will default to allowing all reads and writes. Learn more about this option: https://firebase.google.com/docs/emulator-suite/install_and_configure#security_rules_configuration."}}
-[debug] [2022-07-08T09:35:21.651Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: projectId"}}
-[debug] [2022-07-08T09:35:21.651Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
-[debug] [2022-07-08T09:35:21.651Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","C:\\Users\\OSSVAL\\.cache\\firebase\\emulators\\cloud-firestore-emulator-v1.14.3.jar","--host","localhost","--port",8080,"--functions_emulator","localhost:5001"],"optionalArgs":["port","webchannel_port","host","rules","functions_emulator","seed_from_export"],"joinArgs":false} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"C:\\\\Users\\\\OSSVAL\\\\.cache\\\\firebase\\\\emulators\\\\cloud-firestore-emulator-v1.14.3.jar\",\"--host\",\"localhost\",\"--port\",8080,\"--functions_emulator\",\"localhost:5001\"],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"functions_emulator\",\"seed_from_export\"],\"joinArgs\":false}"}}
+[debug] [2022-07-08T18:00:01.380Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2022-07-08T18:00:01.381Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-07-08T18:00:01.381Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","C:\\Users\\OSSVAL\\.cache\\firebase\\emulators\\cloud-firestore-emulator-v1.14.3.jar","--host","localhost","--port",8080,"--functions_emulator","localhost:5001"],"optionalArgs":["port","webchannel_port","host","rules","functions_emulator","seed_from_export"],"joinArgs":false} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"C:\\\\Users\\\\OSSVAL\\\\.cache\\\\firebase\\\\emulators\\\\cloud-firestore-emulator-v1.14.3.jar\",\"--host\",\"localhost\",\"--port\",8080,\"--functions_emulator\",\"localhost:5001\"],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"functions_emulator\",\"seed_from_export\"],\"joinArgs\":false}"}}
 [info] i  firestore: Firestore Emulator logging to firestore-debug.log {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator logging to \u001b[1mfirestore-debug.log\u001b[22m"}}
-[debug] [2022-07-08T09:35:29.988Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
-[debug] [2022-07-08T09:35:29.988Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
-[debug] [2022-07-08T09:35:29.988Z] Starting Emulator UI with command {"binary":"node","args":["--dns-result-order=ipv4first","C:\\Users\\OSSVAL\\.cache\\firebase\\emulators\\ui-v1.7.0\\server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"--dns-result-order=ipv4first\",\"C:\\\\Users\\\\OSSVAL\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.7.0\\\\server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[debug] [2022-07-08T18:00:09.605Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"storage"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-07-08T18:00:10.570Z] Temp file directory for storage emulator: C:\Users\OSSVAL\AppData\Local\Temp/firebase/storage/blobs {"metadata":{"emulator":{"name":"storage"},"message":"Temp file directory for storage emulator: C:\\Users\\OSSVAL\\AppData\\Local\\Temp/firebase/storage/blobs"}}
+[debug] [2022-07-08T18:00:10.582Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-07-08T18:00:10.583Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-07-08T18:00:10.583Z] Starting Emulator UI with command {"binary":"node","args":["--dns-result-order=ipv4first","C:\\Users\\OSSVAL\\.cache\\firebase\\emulators\\ui-v1.7.0\\server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"--dns-result-order=ipv4first\",\"C:\\\\Users\\\\OSSVAL\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.7.0\\\\server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
 [info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
-[debug] [2022-07-08T09:35:30.154Z] Web / API server started at localhost:4000
+[debug] [2022-07-08T18:00:10.772Z] Web / API server started at localhost:4000
  {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4000\n"}}
 [info] i  functions: Watching "E:\web\when-will-we-meet\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"E:\\web\\when-will-we-meet\\functions\" for Cloud Functions..."}}
-[debug] [2022-07-08T09:35:30.282Z] Validating nodejs source
-[debug] [2022-07-08T09:35:33.452Z] > [functions] package.json contents: {
+[debug] [2022-07-08T18:00:10.868Z] Validating nodejs source
+[debug] [2022-07-08T18:00:14.880Z] > [functions] package.json contents: {
   "name": "functions",
   "scripts": {
     "lint": "eslint --ext .js,.ts .",
@@ -75,6 +76,164 @@ Java HotSpot(TM) 64-Bit Server VM (build 15.0.2+7-27, mixed mode, sharing)
   },
   "private": true
 }
-[debug] [2022-07-08T09:35:33.452Z] Building nodejs source
-[debug] [2022-07-08T09:35:33.452Z] Analyzing nodejs backend spec
-[debug] [2022-07-08T09:35:33.454Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-07-08T18:00:14.880Z] Building nodejs source
+[debug] [2022-07-08T18:00:14.880Z] Analyzing nodejs backend spec
+[debug] [2022-07-08T18:00:14.881Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-07-08T18:00:15.549Z] Serving at port 9005
+
+[debug] [2022-07-08T18:00:15.813Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-07-08T18:00:15.822Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions[us-central1-api]: http function initialized (http://localhost:5001/when-we-meet-28579/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5001/when-we-meet-28579/us-central1/api)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://localhost:4000                │
+└─────────────────────────────────────────────────────────────┘
+
+┌────────────────┬────────────────┬─────────────────────────────────┐
+│ Emulator       │ Host:Port      │ View in Emulator UI             │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Authentication │ localhost:9099 │ http://localhost:4000/auth      │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Functions      │ localhost:5001 │ http://localhost:4000/functions │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Firestore      │ localhost:8080 │ http://localhost:4000/firestore │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Storage        │ localhost:9199 │ http://localhost:4000/storage   │
+└────────────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[warn] !  Error: Internal state invariant broken: no user with ID: gDaiJLb2t4i9kLQ5VSdsqtAqZ7W9
+    at AgentProjectState.getUserByLocalIdAssertingExists (C:\Users\OSSVAL\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:208:19)
+    at AgentProjectState.validateRefreshToken (C:\Users\OSSVAL\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:295:24)
+    at grantToken (C:\Users\OSSVAL\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\operations.js:1199:38)
+    at Proxy.<anonymous> (C:\Users\OSSVAL\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\server.js:375:20)
+    at C:\Users\OSSVAL\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\promise-breaker\index.js:265:46
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {"metadata":{"emulator":{"name":"auth"},"message":"Error: Internal state invariant broken: no user with ID: gDaiJLb2t4i9kLQ5VSdsqtAqZ7W9\n    at AgentProjectState.getUserByLocalIdAssertingExists (C:\\Users\\OSSVAL\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:208:19)\n    at AgentProjectState.validateRefreshToken (C:\\Users\\OSSVAL\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:295:24)\n    at grantToken (C:\\Users\\OSSVAL\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\operations.js:1199:38)\n    at Proxy.<anonymous> (C:\\Users\\OSSVAL\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\server.js:375:20)\n    at C:\\Users\\OSSVAL\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\promise-breaker\\index.js:265:46\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"}}
+[debug] [2022-07-08T18:00:26.955Z] >>> [apiv2][query] POST http://localhost:5001/functions/projects/when-we-meet-28579/trigger_multicast [none]
+[debug] [2022-07-08T18:00:26.955Z] >>> [apiv2][body] POST http://localhost:5001/functions/projects/when-we-meet-28579/trigger_multicast {"eventId":"2b42d319-d1df-468a-958e-3f3a726ecfa8","eventType":"providers/firebase.auth/eventTypes/user.create","resource":{"name":"projects/when-we-meet-28579","service":"firebaseauth.googleapis.com"},"params":{},"timestamp":"2022-07-08T18:00:26.954Z","data":{"uid":"XUEknSqQ45Vqsxged3RQaOc5UY5D","metadata":{"creationTime":"2022-07-08T18:00:26.953Z","lastSignInTime":"2022-07-08T18:00:26.953Z"},"customClaims":{}}}
+[debug] [2022-07-08T18:00:26.961Z] <<< [apiv2][status] POST http://localhost:5001/functions/projects/when-we-meet-28579/trigger_multicast 200
+[debug] [2022-07-08T18:00:26.961Z] <<< [apiv2][body] POST http://localhost:5001/functions/projects/when-we-meet-28579/trigger_multicast {"status":"multicast_acknowledged"}
+[debug] [2022-07-08T18:35:27.540Z] >>> [apiv2][query] POST http://localhost:5001/functions/projects/when-we-meet-28579/trigger_multicast [none]
+[debug] [2022-07-08T18:35:27.541Z] >>> [apiv2][body] POST http://localhost:5001/functions/projects/when-we-meet-28579/trigger_multicast {"eventId":"1657305327540","timestamp":"2022-07-09T03:35:27.540Z","eventType":"google.storage.object.finalize","resource":{"service":"storage.googleapis.com","name":"projects/_/buckets/when-we-meet-28579.appspot.com/objects/profile_images/de221f.png","type":"storage#object"},"data":{"kind":"#storage#object","name":"profile_images/de221f.png","bucket":"when-we-meet-28579.appspot.com","generation":"1657305327395","metageneration":"1","contentType":"image/png","contentDisposition":"inline","timeCreated":"2022-07-09T03:35:27.394Z","updated":"2022-07-09T03:35:27.395Z","storageClass":"STANDARD","size":"855","md5Hash":"YvDHLsuVzvpZAJr+9V6goA==","etag":"M/zl6sXnbD3gAusmQq0JhRfAAyE","cacheControl":"public, max-age=3600","contentEncoding":"identity","crc32c":"----PA==","timeStorageClassUpdated":"2022-07-09T03:35:27.394Z","id":"when-we-meet-28579.appspot.com/profile_images/de221f.png/1657305327395","selfLink":"http://localhost:9199/storage/v1/b/when-we-meet-28579.appspot.com/o/profile_images%2Fde221f.png","mediaLink":"http://localhost:9199/download/storage/v1/b/when-we-meet-28579.appspot.com/o/profile_images%2Fde221f.png?generation=1657305327395&alt=media"}}
+[debug] [2022-07-08T18:35:27.544Z] <<< [apiv2][status] POST http://localhost:5001/functions/projects/when-we-meet-28579/trigger_multicast 200
+[debug] [2022-07-08T18:35:27.544Z] <<< [apiv2][body] POST http://localhost:5001/functions/projects/when-we-meet-28579/trigger_multicast {"status":"multicast_acknowledged"}
+[debug] [2022-07-08T18:35:27.544Z] >>> [apiv2][query] POST http://localhost:5001/functions/projects/when-we-meet-28579/trigger_multicast [none]
+[debug] [2022-07-08T18:35:27.544Z] >>> [apiv2][body] POST http://localhost:5001/functions/projects/when-we-meet-28579/trigger_multicast {"specversion":"1","id":"9cdb80f6-4ea1-4eb6-9943-dfdc4c741fc4","type":"google.cloud.storage.object.v1.finalized","source":"//storage.googleapis.com/projects/_/buckets/when-we-meet-28579.appspot.com/objects/profile_images/de221f.png","time":"2022-07-09T03:35:27.395Z","data":{"kind":"#storage#object","name":"profile_images/de221f.png","bucket":"when-we-meet-28579.appspot.com","generation":"1657305327395","metageneration":"1","contentType":"image/png","contentDisposition":"inline","timeCreated":"2022-07-09T03:35:27.394Z","updated":"2022-07-09T03:35:27.395Z","storageClass":"STANDARD","size":"855","md5Hash":"YvDHLsuVzvpZAJr+9V6goA==","etag":"M/zl6sXnbD3gAusmQq0JhRfAAyE","cacheControl":"public, max-age=3600","contentEncoding":"identity","crc32c":"----PA==","timeStorageClassUpdated":"2022-07-09T03:35:27.394Z","id":"when-we-meet-28579.appspot.com/profile_images/de221f.png/1657305327395","selfLink":"http://localhost:9199/storage/v1/b/when-we-meet-28579.appspot.com/o/profile_images%2Fde221f.png","mediaLink":"http://localhost:9199/download/storage/v1/b/when-we-meet-28579.appspot.com/o/profile_images%2Fde221f.png?generation=1657305327395&alt=media"}}
+[debug] [2022-07-08T18:35:27.547Z] <<< [apiv2][status] POST http://localhost:5001/functions/projects/when-we-meet-28579/trigger_multicast 200
+[debug] [2022-07-08T18:35:27.547Z] <<< [apiv2][body] POST http://localhost:5001/functions/projects/when-we-meet-28579/trigger_multicast {"status":"multicast_acknowledged"}
+[debug] [2022-07-08T18:40:56.930Z] >>> [apiv2][query] POST http://localhost:5001/functions/projects/when-we-meet-28579/trigger_multicast [none]
+[debug] [2022-07-08T18:40:56.930Z] >>> [apiv2][body] POST http://localhost:5001/functions/projects/when-we-meet-28579/trigger_multicast {"eventId":"1657305656930","timestamp":"2022-07-09T03:40:56.930Z","eventType":"google.storage.object.finalize","resource":{"service":"storage.googleapis.com","name":"projects/_/buckets/when-we-meet-28579.appspot.com/objects/profile_images/pastel_green.png5930000000","type":"storage#object"},"data":{"kind":"#storage#object","name":"profile_images/pastel_green.png5930000000","bucket":"when-we-meet-28579.appspot.com","generation":"1657305656918","metageneration":"1","contentType":"image/png","contentDisposition":"inline","timeCreated":"2022-07-09T03:40:56.917Z","updated":"2022-07-09T03:40:56.918Z","storageClass":"STANDARD","size":"4748","md5Hash":"25Hz6K8BMCVESFyjUuxRsw==","etag":"/4uJNZN1EG1fsHKon5ZjJITiuUk","cacheControl":"public, max-age=3600","contentEncoding":"identity","crc32c":"----/w==","timeStorageClassUpdated":"2022-07-09T03:40:56.917Z","id":"when-we-meet-28579.appspot.com/profile_images/pastel_green.png5930000000/1657305656918","selfLink":"http://localhost:9199/storage/v1/b/when-we-meet-28579.appspot.com/o/profile_images%2Fpastel_green.png5930000000","mediaLink":"http://localhost:9199/download/storage/v1/b/when-we-meet-28579.appspot.com/o/profile_images%2Fpastel_green.png5930000000?generation=1657305656918&alt=media"}}
+[debug] [2022-07-08T18:40:56.934Z] <<< [apiv2][status] POST http://localhost:5001/functions/projects/when-we-meet-28579/trigger_multicast 200
+[debug] [2022-07-08T18:40:56.934Z] <<< [apiv2][body] POST http://localhost:5001/functions/projects/when-we-meet-28579/trigger_multicast {"status":"multicast_acknowledged"}
+[debug] [2022-07-08T18:40:56.934Z] >>> [apiv2][query] POST http://localhost:5001/functions/projects/when-we-meet-28579/trigger_multicast [none]
+[debug] [2022-07-08T18:40:56.934Z] >>> [apiv2][body] POST http://localhost:5001/functions/projects/when-we-meet-28579/trigger_multicast {"specversion":"1","id":"a4249701-02be-47d7-b7de-489346c2ad53","type":"google.cloud.storage.object.v1.finalized","source":"//storage.googleapis.com/projects/_/buckets/when-we-meet-28579.appspot.com/objects/profile_images/pastel_green.png5930000000","time":"2022-07-09T03:40:56.918Z","data":{"kind":"#storage#object","name":"profile_images/pastel_green.png5930000000","bucket":"when-we-meet-28579.appspot.com","generation":"1657305656918","metageneration":"1","contentType":"image/png","contentDisposition":"inline","timeCreated":"2022-07-09T03:40:56.917Z","updated":"2022-07-09T03:40:56.918Z","storageClass":"STANDARD","size":"4748","md5Hash":"25Hz6K8BMCVESFyjUuxRsw==","etag":"/4uJNZN1EG1fsHKon5ZjJITiuUk","cacheControl":"public, max-age=3600","contentEncoding":"identity","crc32c":"----/w==","timeStorageClassUpdated":"2022-07-09T03:40:56.917Z","id":"when-we-meet-28579.appspot.com/profile_images/pastel_green.png5930000000/1657305656918","selfLink":"http://localhost:9199/storage/v1/b/when-we-meet-28579.appspot.com/o/profile_images%2Fpastel_green.png5930000000","mediaLink":"http://localhost:9199/download/storage/v1/b/when-we-meet-28579.appspot.com/o/profile_images%2Fpastel_green.png5930000000?generation=1657305656918&alt=media"}}
+[debug] [2022-07-08T18:40:56.939Z] <<< [apiv2][status] POST http://localhost:5001/functions/projects/when-we-meet-28579/trigger_multicast 200
+[debug] [2022-07-08T18:40:56.939Z] <<< [apiv2][body] POST http://localhost:5001/functions/projects/when-we-meet-28579/trigger_multicast {"status":"multicast_acknowledged"}
+[debug] [2022-07-08T18:41:54.626Z] >>> [apiv2][query] POST http://localhost:5001/functions/projects/when-we-meet-28579/trigger_multicast [none]
+[debug] [2022-07-08T18:41:54.626Z] >>> [apiv2][body] POST http://localhost:5001/functions/projects/when-we-meet-28579/trigger_multicast {"eventId":"1657305714626","timestamp":"2022-07-09T03:41:54.626Z","eventType":"google.storage.object.finalize","resource":{"service":"storage.googleapis.com","name":"projects/_/buckets/when-we-meet-28579.appspot.com/objects/profile_images/pastel_orange.png6030000000","type":"storage#object"},"data":{"kind":"#storage#object","name":"profile_images/pastel_orange.png6030000000","bucket":"when-we-meet-28579.appspot.com","generation":"1657305714614","metageneration":"1","contentType":"image/png","contentDisposition":"inline","timeCreated":"2022-07-09T03:41:54.613Z","updated":"2022-07-09T03:41:54.614Z","storageClass":"STANDARD","size":"4749","md5Hash":"uBRKPdHTRn3T6xoITThskA==","etag":"9MFCHBpsy96X1lPPlprRbR0g39w","cacheControl":"public, max-age=3600","contentEncoding":"identity","crc32c":"----DA==","timeStorageClassUpdated":"2022-07-09T03:41:54.613Z","id":"when-we-meet-28579.appspot.com/profile_images/pastel_orange.png6030000000/1657305714614","selfLink":"http://localhost:9199/storage/v1/b/when-we-meet-28579.appspot.com/o/profile_images%2Fpastel_orange.png6030000000","mediaLink":"http://localhost:9199/download/storage/v1/b/when-we-meet-28579.appspot.com/o/profile_images%2Fpastel_orange.png6030000000?generation=1657305714614&alt=media"}}
+[debug] [2022-07-08T18:41:54.629Z] <<< [apiv2][status] POST http://localhost:5001/functions/projects/when-we-meet-28579/trigger_multicast 200
+[debug] [2022-07-08T18:41:54.629Z] <<< [apiv2][body] POST http://localhost:5001/functions/projects/when-we-meet-28579/trigger_multicast {"status":"multicast_acknowledged"}
+[debug] [2022-07-08T18:41:54.629Z] >>> [apiv2][query] POST http://localhost:5001/functions/projects/when-we-meet-28579/trigger_multicast [none]
+[debug] [2022-07-08T18:41:54.629Z] >>> [apiv2][body] POST http://localhost:5001/functions/projects/when-we-meet-28579/trigger_multicast {"specversion":"1","id":"9d0f53d3-7da8-4037-9f47-54ec8d499c6d","type":"google.cloud.storage.object.v1.finalized","source":"//storage.googleapis.com/projects/_/buckets/when-we-meet-28579.appspot.com/objects/profile_images/pastel_orange.png6030000000","time":"2022-07-09T03:41:54.614Z","data":{"kind":"#storage#object","name":"profile_images/pastel_orange.png6030000000","bucket":"when-we-meet-28579.appspot.com","generation":"1657305714614","metageneration":"1","contentType":"image/png","contentDisposition":"inline","timeCreated":"2022-07-09T03:41:54.613Z","updated":"2022-07-09T03:41:54.614Z","storageClass":"STANDARD","size":"4749","md5Hash":"uBRKPdHTRn3T6xoITThskA==","etag":"9MFCHBpsy96X1lPPlprRbR0g39w","cacheControl":"public, max-age=3600","contentEncoding":"identity","crc32c":"----DA==","timeStorageClassUpdated":"2022-07-09T03:41:54.613Z","id":"when-we-meet-28579.appspot.com/profile_images/pastel_orange.png6030000000/1657305714614","selfLink":"http://localhost:9199/storage/v1/b/when-we-meet-28579.appspot.com/o/profile_images%2Fpastel_orange.png6030000000","mediaLink":"http://localhost:9199/download/storage/v1/b/when-we-meet-28579.appspot.com/o/profile_images%2Fpastel_orange.png6030000000?generation=1657305714614&alt=media"}}
+[debug] [2022-07-08T18:41:54.633Z] <<< [apiv2][status] POST http://localhost:5001/functions/projects/when-we-meet-28579/trigger_multicast 200
+[debug] [2022-07-08T18:41:54.633Z] <<< [apiv2][body] POST http://localhost:5001/functions/projects/when-we-meet-28579/trigger_multicast {"status":"multicast_acknowledged"}
+[debug] [2022-07-09T05:51:34.779Z] ----------------------------------------------------------------------
+[debug] [2022-07-09T05:51:34.780Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\OSSVAL\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2022-07-09T05:51:34.781Z] CLI Version:   11.1.0
+[debug] [2022-07-09T05:51:34.781Z] Platform:      win32
+[debug] [2022-07-09T05:51:34.781Z] Node Version:  v16.13.1
+[debug] [2022-07-09T05:51:34.784Z] Time:          Sat Jul 09 2022 14:51:34 GMT+0900 (대한민국 표준시)
+[debug] [2022-07-09T05:51:34.784Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-09T05:51:34.859Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-09T05:51:34.859Z] > authorizing via signed-in user (perengdev0302@gmail.com)
+[debug] [2022-07-09T05:51:35.117Z] java version "15.0.2" 2021-01-19
+
+[debug] [2022-07-09T05:51:35.117Z] Java(TM) SE Runtime Environment (build 15.0.2+7-27)
+Java HotSpot(TM) 64-Bit Server VM (build 15.0.2+7-27, mixed mode, sharing)
+
+[debug] [2022-07-09T05:51:35.144Z] Parsed Java major version: 15
+[info] i  emulators: Starting emulators: auth, functions, firestore, storage {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: auth, functions, firestore, storage"}}
+[warn] !  emulators: It seems that you are running multiple instances of the emulator suite for project when-we-meet-28579. This may result in unexpected behavior. 
+[debug] [2022-07-09T05:51:35.176Z] [hub] writing locator at C:\Users\OSSVAL\AppData\Local\Temp\hub-when-we-meet-28579.json
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: database, hosting, pubsub {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mdatabase, hosting, pubsub\u001b[22m"}}
+[info] +  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
+[debug] [2022-07-09T05:51:35.229Z] defaultcredentials: writing to file C:\Users\OSSVAL\AppData\Roaming\firebase\perengdev0302_gmail_com_application_default_credentials.json
+[debug] [2022-07-09T05:51:35.230Z] Setting GAC to C:\Users\OSSVAL\AppData\Roaming\firebase\perengdev0302_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\OSSVAL\\AppData\\Roaming\\firebase\\perengdev0302_gmail_com_application_default_credentials.json"}}
+[debug] [2022-07-09T05:51:35.232Z] > refreshing access token with scopes: []
+[debug] [2022-07-09T05:51:35.234Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-07-09T05:51:35.234Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-07-09T05:51:35.648Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2022-07-09T05:51:35.649Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-07-09T05:51:35.659Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/when-we-meet-28579/adminSdkConfig [none]
+[debug] [2022-07-09T05:51:36.258Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/when-we-meet-28579/adminSdkConfig 200
+[debug] [2022-07-09T05:51:36.258Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/when-we-meet-28579/adminSdkConfig {"projectId":"when-we-meet-28579","storageBucket":"when-we-meet-28579.appspot.com","locationId":"asia-northeast3"}
+[warn] !  firestore: Did not find a Cloud Firestore rules file specified in a firebase.json config file. {"metadata":{"emulator":{"name":"firestore"},"message":"Did not find a Cloud Firestore rules file specified in a firebase.json config file."}}
+[warn] !  firestore: The emulator will default to allowing all reads and writes. Learn more about this option: https://firebase.google.com/docs/emulator-suite/install_and_configure#security_rules_configuration. {"metadata":{"emulator":{"name":"firestore"},"message":"The emulator will default to allowing all reads and writes. Learn more about this option: https://firebase.google.com/docs/emulator-suite/install_and_configure#security_rules_configuration."}}
+[debug] [2022-07-09T05:51:36.274Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2022-07-09T05:51:36.275Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-07-09T05:51:36.275Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","C:\\Users\\OSSVAL\\.cache\\firebase\\emulators\\cloud-firestore-emulator-v1.14.3.jar","--host","localhost","--port",8080,"--functions_emulator","localhost:5001"],"optionalArgs":["port","webchannel_port","host","rules","functions_emulator","seed_from_export"],"joinArgs":false} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"C:\\\\Users\\\\OSSVAL\\\\.cache\\\\firebase\\\\emulators\\\\cloud-firestore-emulator-v1.14.3.jar\",\"--host\",\"localhost\",\"--port\",8080,\"--functions_emulator\",\"localhost:5001\"],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"functions_emulator\",\"seed_from_export\"],\"joinArgs\":false}"}}
+[info] i  firestore: Firestore Emulator logging to firestore-debug.log {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator logging to \u001b[1mfirestore-debug.log\u001b[22m"}}
+[debug] [2022-07-09T05:51:46.695Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"storage"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-07-09T05:51:47.711Z] Temp file directory for storage emulator: C:\Users\OSSVAL\AppData\Local\Temp/firebase/storage/blobs {"metadata":{"emulator":{"name":"storage"},"message":"Temp file directory for storage emulator: C:\\Users\\OSSVAL\\AppData\\Local\\Temp/firebase/storage/blobs"}}
+[debug] [2022-07-09T05:51:47.723Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-07-09T05:51:47.723Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-07-09T05:51:47.723Z] Starting Emulator UI with command {"binary":"node","args":["--dns-result-order=ipv4first","C:\\Users\\OSSVAL\\.cache\\firebase\\emulators\\ui-v1.7.0\\server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"--dns-result-order=ipv4first\",\"C:\\\\Users\\\\OSSVAL\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.7.0\\\\server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-07-09T05:51:47.887Z] Web / API server started at localhost:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4000\n"}}
+[info] i  functions: Watching "E:\web\when-will-we-meet\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"E:\\web\\when-will-we-meet\\functions\" for Cloud Functions..."}}
+[debug] [2022-07-09T05:51:48.004Z] Validating nodejs source
+[debug] [2022-07-09T05:51:51.679Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc -w",
+    "build:watch": "tsc --watch",
+    "serve": "tsc -w | firebase emulators:start",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "lib/src/index.js",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-session": "^1.17.3",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "@types/express-session": "^1.17.5",
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^0.2.0",
+    "typescript": "^4.5.4"
+  },
+  "private": true
+}
+[debug] [2022-07-09T05:51:51.679Z] Building nodejs source
+[debug] [2022-07-09T05:51:51.679Z] Analyzing nodejs backend spec
+[debug] [2022-07-09T05:51:51.687Z] Could not find functions.yaml. Must use http discovery
+[warn] !  Error: Internal state invariant broken: no user with ID: XUEknSqQ45Vqsxged3RQaOc5UY5D
+    at AgentProjectState.getUserByLocalIdAssertingExists (C:\Users\OSSVAL\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:208:19)
+    at AgentProjectState.validateRefreshToken (C:\Users\OSSVAL\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:295:24)
+    at grantToken (C:\Users\OSSVAL\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\operations.js:1199:38)
+    at Proxy.<anonymous> (C:\Users\OSSVAL\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\server.js:375:20)
+    at C:\Users\OSSVAL\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\promise-breaker\index.js:265:46
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {"metadata":{"emulator":{"name":"auth"},"message":"Error: Internal state invariant broken: no user with ID: XUEknSqQ45Vqsxged3RQaOc5UY5D\n    at AgentProjectState.getUserByLocalIdAssertingExists (C:\\Users\\OSSVAL\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:208:19)\n    at AgentProjectState.validateRefreshToken (C:\\Users\\OSSVAL\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:295:24)\n    at grantToken (C:\\Users\\OSSVAL\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\operations.js:1199:38)\n    at Proxy.<anonymous> (C:\\Users\\OSSVAL\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\server.js:375:20)\n    at C:\\Users\\OSSVAL\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\promise-breaker\\index.js:265:46\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"}}
