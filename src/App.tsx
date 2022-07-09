@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
 
-import { getUserThunk, logoutUserThunk } from './store/modules/userSlice';
+import { getUserThunk, logOutUser } from './store/modules/userSlice';
 import { PrivateRoute, PublicRoute } from './routes';
 import { useAppDispatch } from './store';
 
@@ -27,7 +27,7 @@ function App() {
       } else {
         setIsLoading(true);
 
-        await dispatch(logoutUserThunk());
+        await dispatch(logOutUser());
 
         setIsLoading(false);
       }

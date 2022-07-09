@@ -7,14 +7,6 @@ import serviceAccount from '../../service-account.json';
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount as ServiceAccount),
 });
-// admin.initializeApp({
-//   credential: admin.credential.cert({
-//     privateKey: functions.config().private.key.replace(/\\n/g, '\n'),
-//     projectId: functions.config().project.id,
-//     clientEmail: functions.config().client.email,
-//   }),
-//   databaseURL: `https://${functions.config().project.id}.firebaseio.com`,
-// });
 
 const db = admin.firestore();
 export { admin, db };

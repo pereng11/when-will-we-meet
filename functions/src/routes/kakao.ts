@@ -36,6 +36,7 @@ kakaoRoutes.get('/', (req, res) => {
 });
 
 kakaoRoutes.get('/auth', async (req, res) => {
+  const LOCAL_CLIENT_LOGIN_URL = 'http://localhost:3000/login';
   try {
     const query: AuthQuery = req.query;
     if (!query.code) {
@@ -56,7 +57,7 @@ kakaoRoutes.get('/auth', async (req, res) => {
         httpOnly: false,
         secure: false,
       });
-      res.redirect('http://localhost:3000/login');
+      res.redirect(LOCAL_CLIENT_LOGIN_URL);
     }
   } catch (err) {
     console.log(err);
@@ -133,8 +134,6 @@ const createFirebaseToken = async (kakaoAccessToken: string) => {
     if (!profile || !profile.id) {
       throw new Error('유저가 존재하지 않습니다');
     }
-
-    console.log(profile);
 
     const userInfo: UserInfo = {
       uid: `kakao${profile.id}`,
